@@ -31,7 +31,7 @@
   --r-2xl: 36px;
 
   --font-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
-  --font-sans:  "Inter", "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-sans:  "Plus Jakarta Sans", "Inter", system-ui, -apple-system, sans-serif;
 
   --container: 80rem;
 }
