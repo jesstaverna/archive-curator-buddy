@@ -973,3 +973,21 @@ ul,ol,dl{ margin:0; padding:0; list-style:none; }
   .blog-tools{ flex-direction:column; align-items:stretch; }
   .blog-search{ min-width: auto; }
 }
+
+/* ---------- Newsletter card ---------- */
+.newsletter-card{
+  display:grid; grid-template-columns: 1.2fr .9fr; gap:3rem; align-items:center;
+  background:#fff; border:1px solid var(--border); border-radius:var(--r-xl);
+  padding:3rem; box-shadow: 0 18px 40px -28px rgba(20,12,8,.18);
+}
+.newsletter-form{ display:flex; gap:.75rem; }
+.newsletter-form input{
+  flex:1; padding:.95rem 1.1rem; border:1px solid var(--border);
+  border-radius:999px; background:#fff; font:inherit; color:var(--ink);
+  transition: border-color .25s, box-shadow .25s;
+}
+.newsletter-form input:focus{ outline:none; border-color:var(--ink); box-shadow:0 0 0 4px rgba(255,101,1,.12); }
+@media (max-width: 900px){
+  .newsletter-card{ grid-template-columns:1fr; padding:2rem; gap:1.5rem; }
+  .newsletter-form{ flex-direction:column; }
+}
