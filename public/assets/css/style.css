@@ -70,11 +70,13 @@ ul,ol,dl{ margin:0; padding:0; list-style:none; }
 .section--surface{ background:var(--surface-2); }
 
 .eyebrow{
+  display:block;
   font-size:12px;
   font-weight:500;
   text-transform:uppercase;
-  letter-spacing:.26em;
+  letter-spacing:.22em;
   color:#ff6501;
+  margin-bottom:.85rem;
 }
 
 .lead{
@@ -343,7 +345,7 @@ ul,ol,dl{ margin:0; padding:0; list-style:none; }
 @media (min-width:768px){ .podcast-wrap{ padding:3.5rem; } }
 .podcast-grid{ display:grid; gap:3rem; align-items:center; }
 @media (min-width:1024px){ .podcast-grid{ grid-template-columns:1fr 1fr; } }
-.podcast .eyebrow{ color:rgba(255,255,255,.8); letter-spacing:.28em; }
+.podcast .eyebrow{ color:#ff6501; letter-spacing:.22em; }
 .podcast h2{ color:#fff; }
 .podcast p.lead{ color:rgba(255,255,255,.85); max-width:36rem; }
 .podcast-ctas{ display:flex; flex-wrap:wrap; gap:.75rem; margin-top:2rem; }
@@ -644,7 +646,7 @@ ul,ol,dl{ margin:0; padding:0; list-style:none; }
   padding: 3.5rem 4rem 4rem;
   color: #F1ECE6;
 }
-.cta-eyebrow{ color: var(--primary-glow) !important; }
+.cta-eyebrow{ color:#ff6501 !important; letter-spacing:.22em; }
 .cta-title{
   font-family: var(--font-serif);
   font-size: clamp(2rem, 3.4vw, 3rem);
