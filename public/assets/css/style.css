@@ -1527,3 +1527,81 @@ svg{ stroke-width: 1.5; }
   font-weight: 500;
   letter-spacing: -0.01em;
 }
+
+/* ============================================================
+   HEADER — Standardized (matches reference screenshot)
+   ============================================================ */
+.site-header{
+  background: rgba(253,252,250,.92);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(232,226,216,.5);
+}
+.header-inner{ height: 6rem; gap: 2rem; }
+.site-header.is-scrolled .header-inner{ height: 5rem; }
+
+.brand img{ height: 3.25rem; }
+.site-header.is-scrolled .brand img{ height: 2.75rem; }
+.brand-sub{
+  font-size: .72rem;
+  letter-spacing: .14em;
+  color: #1B1B1B;
+  font-weight: 600;
+}
+
+/* Nav — generous spacing, simple links, orange hover */
+.nav{ gap: .25rem; }
+.nav a{
+  padding: .6rem 1.05rem;
+  font-size: .92rem;
+  font-weight: 500;
+  color: #1B1B1B;
+  background: transparent !important;
+  border-radius: 999px;
+  transition: color .2s ease;
+}
+.nav a:hover,
+.nav a[aria-current="page"]{
+  color: #ff6501;
+  background: transparent !important;
+}
+
+/* Header CTAs — larger pills matching reference */
+.header-cta{ gap: .65rem; }
+.header-cta .btn{
+  padding: .8rem 1.35rem;
+  font-size: .9rem;
+  font-weight: 600;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.header-cta .btn--ghost{
+  background: #fff;
+  border: 1px solid #E8E2D8;
+  color: #1B1B1B;
+  box-shadow: 0 1px 2px rgba(0,0,0,.03);
+}
+.header-cta .btn--ghost:hover{
+  border-color: #1B1B1B;
+  transform: translateY(-1px);
+}
+.header-cta .btn--cert .btn-ico{
+  width: 28px; height: 28px;
+  border-radius: 999px;
+  background: #FFF1E6;
+  color: #ff6501;
+  display: inline-flex; align-items: center; justify-content: center;
+  margin-right: .15rem;
+}
+.header-cta .btn--primary{
+  background: #ff6501;
+  color: #fff;
+  box-shadow: 0 8px 22px -8px rgba(255,101,1,.55);
+}
+.header-cta .btn--primary .arrow .ico{ width: 16px; height: 16px; }
+
+@media (min-width:1280px){
+  .header-inner{ gap: 2.5rem; }
+  .nav{ gap: .5rem; }
+  .nav a{ padding: .65rem 1.15rem; font-size: .95rem; }
+}
