@@ -1505,3 +1505,25 @@ svg{ stroke-width: 1.5; }
   height: 2px; width: 40px; background: #ff6501; opacity: 1;
   border-radius: 2px; margin-top: 1.5rem;
 }
+
+/* ---------- Floating editorial badge (over figure) ---------- */
+.about-intro .year-badge{
+  right: -24px;
+  bottom: -24px;
+  background: #FFFDF8;
+  border: 1px solid #EFE9DF;
+  border-radius: 18px;
+  padding: 1.1rem 1.6rem 1.25rem;
+  box-shadow: 0 24px 60px -22px rgba(20,12,8,.22);
+  text-align: left;
+  min-width: 240px;
+}
+.about-intro .year-badge .eyebrow{ margin: 0 0 .35rem; }
+.about-intro .year-badge .yb-title{
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  line-height: 1.2;
+  color: #1B1B1B;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
