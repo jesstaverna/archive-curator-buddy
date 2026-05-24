@@ -82,3 +82,54 @@
     });
   }
 })();
+
+/* Premium subtle animations: scroll reveal + scroll-to-top */
+(function(){
+  if (typeof window === 'undefined') return;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Auto-tag common blocks for reveal
+  var selectors = 'section, .card, .benefit-card, .initiative-card, .value-card, .mv-card, .associada-card, .article-card, .event-card, .contact-card, .tl-card, .role-card, .stat-card, h1, h2, h3, .eyebrow';
+  document.querySelectorAll(selectors).forEach(function(el){
+    if (!el.classList.contains('reveal')) el.classList.add('reveal');
+  });
+
+  if (reduce || !('IntersectionObserver' in window)){
+    document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('is-visible');});
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting){ e.target.classList.add('is-visible'); io.unobserve(e.target); }
+      });
+    }, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  }
+
+  // Scroll-to-top button
+  var btn = document.getElementById('to-top');
+  if (!btn){
+    btn = document.createElement('button');
+    btn.id = 'to-top';
+    btn.setAttribute('aria-label','Voltar ao topo');
+    btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>';
+    document.body.appendChild(btn);
+  }
+  btn.addEventListener('click', function(){ window.scrollTo({top:0, behavior: reduce ? 'auto' : 'smooth'}); });
+  var onScroll = function(){
+    if (window.scrollY > 480) btn.classList.add('is-visible');
+    else btn.classList.remove('is-visible');
+  };
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  // Smooth scroll for in-page anchors
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var id = a.getAttribute('href');
+      if (id && id.length > 1){
+        var t = document.querySelector(id);
+        if (t){ e.preventDefault(); t.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block:'start'}); }
+      }
+    });
+  });
+})();
