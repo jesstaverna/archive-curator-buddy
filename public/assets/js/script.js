@@ -34,3 +34,49 @@
     });
   });
 })();
+
+/* ---------- Associates carousel arrows ---------- */
+(function(){
+  var carousel = document.getElementById('assoc-carousel');
+  if(!carousel) return;
+  document.querySelectorAll('.ca-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var dir = parseInt(btn.getAttribute('data-dir')||'1',10);
+      var step = carousel.querySelector('.member');
+      var w = step ? step.getBoundingClientRect().width + 24 : 320;
+      carousel.scrollBy({ left: dir * w * 2, behavior: 'smooth' });
+    });
+  });
+})();
+
+/* ---------- Blog: tab filter + search ---------- */
+(function(){
+  var tabs = document.querySelectorAll('.blog-tab');
+  var search = document.getElementById('blog-search');
+  var cards = document.querySelectorAll('.article-card[data-category]');
+  if(!tabs.length || !cards.length) return;
+  var activeCat = 'all', q = '';
+  function apply(){
+    cards.forEach(function(c){
+      var cat = c.getAttribute('data-category');
+      var txt = (c.textContent||'').toLowerCase();
+      var matchCat = activeCat === 'all' || cat === activeCat;
+      var matchQ = !q || txt.indexOf(q) !== -1;
+      c.style.display = (matchCat && matchQ) ? '' : 'none';
+    });
+  }
+  tabs.forEach(function(t){
+    t.addEventListener('click', function(){
+      tabs.forEach(function(x){ x.classList.remove('is-active'); });
+      t.classList.add('is-active');
+      activeCat = t.getAttribute('data-cat') || 'all';
+      apply();
+    });
+  });
+  if(search){
+    search.addEventListener('input', function(e){
+      q = (e.target.value||'').toLowerCase().trim();
+      apply();
+    });
+  }
+})();
