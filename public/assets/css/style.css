@@ -1466,3 +1466,42 @@ svg{ stroke-width: 1.5; }
   background: #ff6501; opacity: 1;
   border-radius: 2px;
 }
+
+/* ---------- Home benefits — 4 separate floating cards (reference) ---------- */
+.benefits-grid.benefits-grid--cards{
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  gap: 1.25rem;
+  margin-top: 3rem;
+}
+@media (min-width:1024px){
+  .benefits-grid.benefits-grid--cards{ grid-template-columns: repeat(4, 1fr) !important; }
+}
+.benefits-grid--cards .benefit-card{
+  background: #fff;
+  border-radius: 18px;
+  padding: 2rem 1.75rem 2.25rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,.03), 0 10px 28px -16px rgba(20,12,8,.10);
+}
+.benefits-grid--cards .benefit-card:hover{
+  background: #fff;
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0,0,0,.04), 0 22px 50px -18px rgba(20,12,8,.16);
+}
+.benefits-grid--cards .benefit-icon{
+  width: 44px; height: 44px; border-radius: 12px;
+  background: #F4F1EC;
+  border: 1px solid #E8E2D8;
+  color: #5a5550;
+}
+.benefits-grid--cards .benefit-card:hover .benefit-icon{
+  background: #FFF1E6;
+  border-color: #FFE0C7;
+  color: #ff6501;
+}
+.benefits-grid--cards .benefit-card h3{ font-size: 1.35rem; margin-top: 2rem; }
+.benefits-grid--cards .benefit-card .rule{
+  height: 2px; width: 40px; background: #ff6501; opacity: 1;
+  border-radius: 2px; margin-top: 1.5rem;
+}
