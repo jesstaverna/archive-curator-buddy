@@ -992,3 +992,29 @@ ul,ol,dl{ margin:0; padding:0; list-style:none; }
   .newsletter-card{ grid-template-columns:1fr; padding:2rem; gap:1.5rem; }
   .newsletter-form{ flex-direction:column; }
 }
+
+/* ---------- A11y: reduced motion ---------- */
+@media (prefers-reduced-motion: reduce){
+  *, *::before, *::after{
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---------- A11y: focus visibility ---------- */
+:focus-visible{
+  outline: 2px solid #ff6501;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ---------- Skip link ---------- */
+.skip-link{
+  position:absolute; left:-9999px; top:0;
+  background:#000; color:#fff; padding:.75rem 1rem;
+  z-index:9999; border-radius:0 0 6px 0;
+  font-size:.875rem;
+}
+.skip-link:focus{ left:0; }
