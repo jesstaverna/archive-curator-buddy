@@ -582,8 +582,8 @@ ul,ol,dl{ margin:0; padding:0; list-style:none; }
 .header-inner{ gap: 1.5rem; }
 .brand img{ height: 4rem; }
 .site-header.is-scrolled .brand img{ height: 3.25rem; }
-.brand-sub{ display:none !important; }    /* free up space; logo image already carries name */
-.nav{ gap: .15rem; flex-wrap: nowrap; }
+.brand-sub{ display:block !important; font-size:.62rem; letter-spacing:.18em; }
+.nav{ gap: .1rem; flex-wrap: nowrap; }
 .nav a{
   padding: .5rem .7rem;
   font-size: .82rem;
@@ -591,13 +591,13 @@ ul,ol,dl{ margin:0; padding:0; list-style:none; }
   white-space: nowrap;
 }
 .header-cta{ gap: .5rem; flex-shrink: 0; }
-.header-cta .btn{ padding: .7rem 1.1rem; font-size: .8rem; white-space: nowrap; }
+.header-cta .btn{ padding: .65rem 1rem; font-size: .78rem; white-space: nowrap; }
 
 @media (min-width:1280px){
   .nav{ gap:.35rem; }
   .nav a{ padding:.55rem .85rem; font-size:.85rem; }
   .header-cta .btn{ padding:.8rem 1.25rem; font-size:.825rem; }
-  .brand-sub{ display:block !important; }
+  .brand-sub{ font-size:.7rem; }
 }
 @media (min-width:1440px){
   .nav a{ padding:.55rem 1rem; font-size:.875rem; }
