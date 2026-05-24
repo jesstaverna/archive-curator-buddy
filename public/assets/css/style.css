@@ -583,10 +583,10 @@ ul,ol,dl{ margin:0; padding:0; list-style:none; }
 .brand img{ height: 3.5rem; }
 .site-header.is-scrolled .brand img{ height: 3rem; }
 .brand-sub{
-  display:block !important;
-  font-size:.62rem; letter-spacing:.18em;
-  white-space:nowrap;
+  display:flex !important; flex-direction:column;
+  font-size:.62rem; letter-spacing:.18em; line-height:1.4;
 }
+.brand-sub > span{ white-space:nowrap; }
 .menu-toggle{ display:none !important; }
 .nav{ gap: .1rem; flex-wrap: nowrap; }
 .nav a{
