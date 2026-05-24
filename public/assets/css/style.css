@@ -2196,3 +2196,37 @@ svg{ stroke-width: 1.5; }
 @media (prefers-reduced-motion: reduce){
   .reveal{opacity:1; transform:none;}
 }
+
+/* =========================================================
+   PODCAST PLAY — cinematic pulse + ripple
+   ========================================================= */
+@media (prefers-reduced-motion: no-preference){
+  .podcast-video .play span{
+    position: relative;
+    box-shadow: 0 10px 30px -10px rgba(255,101,1,.45), 0 0 0 0 rgba(255,101,1,.55);
+    animation: play-breathe 3s ease-in-out infinite;
+    transition: transform .35s ease, box-shadow .35s ease, background-color .3s ease;
+  }
+  .podcast-video .play span::before,
+  .podcast-video .play span::after{
+    content:""; position:absolute; inset:0; border-radius:inherit;
+    border:1px solid rgba(255,101,1,.55);
+    pointer-events:none;
+    animation: play-ripple 2.8s cubic-bezier(.2,.7,.2,1) infinite;
+  }
+  .podcast-video .play span::after{ animation-delay: 1.4s; }
+  .podcast-video:hover .play span{
+    transform: scale(1.08);
+    box-shadow: 0 14px 40px -10px rgba(255,101,1,.65), 0 0 0 8px rgba(255,101,1,.12);
+    animation-play-state: paused;
+  }
+  @keyframes play-breathe{
+    0%,100%{ transform: scale(1);     box-shadow: 0 10px 30px -10px rgba(255,101,1,.45), 0 0 0 0 rgba(255,101,1,.45); }
+    50%    { transform: scale(1.035); box-shadow: 0 14px 36px -10px rgba(255,101,1,.55), 0 0 0 10px rgba(255,101,1,.08); }
+  }
+  @keyframes play-ripple{
+    0%  { opacity:.55; transform: scale(1); }
+    80% { opacity:0;   transform: scale(1.7); }
+    100%{ opacity:0;   transform: scale(1.7); }
+  }
+}
