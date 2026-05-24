@@ -43,7 +43,9 @@
     btn.addEventListener('click', function(){
       var dir = parseInt(btn.getAttribute('data-dir')||'1',10);
       var step = carousel.querySelector('.member');
-      var w = step ? step.getBoundingClientRect().width + 24 : 320;
+      var styles = window.getComputedStyle(carousel);
+      var gap = parseFloat(styles.columnGap || styles.gap || '12') || 12;
+      var w = step ? step.getBoundingClientRect().width + gap : 320;
       carousel.scrollBy({ left: dir * w * 2, behavior: 'smooth' });
     });
   });
