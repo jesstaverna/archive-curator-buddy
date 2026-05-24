@@ -15,14 +15,46 @@
 <meta property="og:title" content="Cursos e Eventos — IPMCONT | Capacitação para mulheres contabilistas" />
 <meta property="og:description" content="Agenda completa de cursos, palestras, workshops e eventos do IPMCONT para mulheres contabilistas do Paraná." />
 <meta property="og:url" content="https://archive-curator-buddy.lovable.app/cursos-eventos.html" />
-<meta property="og:image" content="https://archive-curator-buddy.lovable.app/assets/images/cta-conference.jpg" />
+<meta property="og:image" content="https://archive-curator-buddy.lovable.app/assets/images/events-hero.jpg" />
 <meta property="og:locale" content="pt_BR" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Cursos e Eventos — IPMCONT | Capacitação para mulheres contabilistas" />
+<meta name="twitter:title" content="Cursos e Eventos — IPMCONT" />
 <meta name="twitter:description" content="Agenda completa de cursos, palestras, workshops e eventos do IPMCONT para mulheres contabilistas do Paraná." />
-<meta name="twitter:image" content="https://archive-curator-buddy.lovable.app/assets/images/cta-conference.jpg" />
+<meta name="twitter:image" content="https://archive-curator-buddy.lovable.app/assets/images/events-hero.jpg" />
 <meta name="robots" content="index,follow,max-image-preview:large" />
 <meta name="theme-color" content="#ff6501" />
+<style>
+.past-events-collage{display:grid;grid-template-columns:1.15fr 1fr;gap:1.25rem;margin-top:3rem;}
+.pe-main{position:relative;display:block;border-radius:24px;overflow:hidden;min-height:520px;}
+.pe-main img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;transition:transform .8s ease;}
+.pe-main:hover img{transform:scale(1.04);}
+.pe-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.85));display:flex;flex-direction:column;justify-content:flex-end;padding:2rem;color:#fff;}
+.pe-tag{display:inline-flex;align-items:center;font-size:11px;text-transform:uppercase;letter-spacing:.22em;color:#ff6501;font-weight:500;margin-bottom:.75rem;}
+.pe-overlay h3{font-family:"Cormorant Garamond",serif;font-size:1.85rem;font-weight:500;line-height:1.2;color:#fff;margin:0;}
+.pe-grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:1.25rem;}
+.pe-thumb{position:relative;display:block;border-radius:20px;overflow:hidden;min-height:250px;}
+.pe-thumb img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;transition:transform .8s ease;}
+.pe-thumb::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.45));pointer-events:none;}
+.pe-thumb:hover img{transform:scale(1.05);}
+.event-card-static{background:#fff;border-radius:20px;padding:1.75rem;box-shadow:0 1px 2px rgba(0,0,0,.04),0 10px 30px -18px rgba(0,0,0,.15);display:flex;flex-direction:column;gap:.5rem;transition:transform .3s ease,box-shadow .3s ease;}
+.event-card-static:hover{transform:translateY(-4px);box-shadow:0 1px 2px rgba(0,0,0,.04),0 20px 40px -18px rgba(0,0,0,.2);}
+.event-card-static .ev-tag{display:inline-flex;align-items:center;gap:.5rem;font-size:11px;text-transform:uppercase;letter-spacing:.22em;color:#ff6501;font-weight:500;margin-bottom:.5rem;}
+.event-card-static .ev-tag .dot{width:6px;height:6px;border-radius:50%;background:#ff6501;}
+.event-card-static h3{font-family:"Cormorant Garamond",serif;font-size:1.45rem;font-weight:500;line-height:1.25;margin:0 0 .35rem;color:#1b1b1b;}
+.event-card-static p.desc{color:var(--muted);font-size:.95rem;line-height:1.55;margin:0 0 1rem;}
+.event-card-static .ev-meta{display:flex;align-items:center;gap:.55rem;color:#6b6b6b;font-size:.85rem;margin-top:.15rem;}
+.event-card-static .ev-meta svg{flex-shrink:0;color:#ff6501;}
+.event-card-static .ev-btn{margin-top:1.25rem;align-self:flex-start;display:inline-flex;align-items:center;gap:.5rem;padding:.65rem 1.1rem;border-radius:999px;border:1px solid #e7e3da;color:#1b1b1b;font-size:.85rem;font-weight:500;text-decoration:none;transition:background .25s ease,color .25s ease,border-color .25s ease;}
+.event-card-static .ev-btn:hover{background:#1b1b1b;color:#fff;border-color:#1b1b1b;}
+.agenda-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem;}
+.initiatives-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:3.5rem;background:#fff;border-radius:24px;padding:2.5rem;box-shadow:0 1px 2px rgba(0,0,0,.04),0 20px 50px -25px rgba(0,0,0,.12);}
+@media (max-width: 900px){
+  .past-events-collage{grid-template-columns:1fr;}
+  .pe-main{min-height:340px;}
+  .agenda-grid{grid-template-columns:1fr;}
+  .initiatives-grid{grid-template-columns:1fr;padding:1.5rem;}
+}
+</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://archive-curator-buddy.lovable.app/"}, {"@type": "ListItem", "position": 2, "name": "Cursos e Eventos", "item": "https://archive-curator-buddy.lovable.app/cursos-eventos.html"}]}</script>
 </head>
 <body>
@@ -35,7 +67,6 @@
       <img src="assets/images/logo-ipmcont.png" alt="IPMCONT — Instituto Paranaense da Mulher Contabilista" />
       <span class="brand-sub"><span>Instituto Paranaense</span><span>da Mulher Contabilista</span></span>
     </a>
-
     <nav class="nav" aria-label="Navegação principal">
       <a href="sobre.html">Sobre</a>
       <a href="beneficios.html">Benefícios</a>
@@ -44,15 +75,12 @@
       <a href="associadas.html">Associadas</a>
       <a href="contato.html">Contato</a>
     </nav>
-
     <div class="header-cta">
       <a href="#certificado" class="btn btn--ghost btn--cert"><svg class="btn-ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg><span>Certificado Digital</span></a>
       <a href="contato.html#associar" class="btn btn--primary">Associe-se <span class="arrow"><svg class="ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span></a>
     </div>
-
     <button class="menu-toggle" aria-label="Abrir menu" aria-controls="mobile-menu"><svg class="ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
-
   <div id="mobile-menu" class="mobile-menu">
     <div class="container">
       <a href="sobre.html">Sobre</a>
@@ -65,6 +93,7 @@
     </div>
   </div>
 </header>
+
 <main id="conteudo">
 
 <!-- ================= Internal Hero ================= -->
@@ -73,145 +102,142 @@
     <nav class="ihero-crumbs" aria-label="Trilha de navegação">
       <a href="index.html">Home</a>
       <span>/</span>
-      <strong>Cursos &amp; Eventos</strong>
+      <strong>Cursos e Eventos</strong>
     </nav>
     <div class="ihero">
       <div class="ihero-body">
-        <span class="ihero-pill"><span class="dot"></span>Cursos &amp; Eventos</span>
-        <h1>Capacitação e networking para <em>contadoras</em></h1>
-        <p class="ihero-lead">Agenda completa de cursos, palestras, workshops e encontros voltados ao desenvolvimento profissional das mulheres contabilistas.</p>
+        <span class="ihero-pill"><span class="dot"></span>Cursos e Eventos</span>
+        <h1>Cursos e eventos do <em>IPMCONT</em></h1>
+        <p class="ihero-lead">O IPMCONT promove cursos, palestras, encontros e eventos voltados ao desenvolvimento profissional de mulheres contabilistas no Paraná.</p>
+        <p class="ihero-lead">Nossas iniciativas incentivam atualização contábil, networking profissional, troca de experiências e fortalecimento da presença feminina no mercado contábil.</p>
         <div class="ihero-rule"></div>
       </div>
       <div class="ihero-media">
-        <img src="assets/images/events-hero.jpg" alt="Mulheres contabilistas em evento de capacitação" decoding="async" />
+        <img src="assets/images/events-hero.jpg" alt="Mulheres contabilistas em palestra do IPMCONT" decoding="async" />
       </div>
     </div>
   </div>
 </section>
 
-
-<section id="conteudo" class="section">
+<!-- ================= Intro — Desenvolvimento profissional ================= -->
+<section class="about-intro">
   <div class="container">
     <div class="grid">
       <div class="figure">
-        <img loading="lazy" decoding="async" src="assets/images/events-past.jpg" alt="Mulheres contabilistas em evento de capacitação" />
-        <div class="year-badge"><div class="y" style="font-size:1.5rem;">Agenda</div><div class="l">Cursos &amp; eventos</div></div>
+        <img loading="lazy" decoding="async" src="assets/images/benefits-community.jpg" alt="Duas profissionais contabilistas trabalhando com laptop" />
+        <div class="year-badge"><div class="y" style="font-size:1.5rem;">Capacitação</div><div class="l">Conhecimento &amp; rede</div></div>
       </div>
       <div>
-        <p class="eyebrow font-medium text-orange-500 text-xs">O que oferecemos</p>
-        <h2 class="h-1 mt-4">Uma agenda que <span class="italic-grad">capacita</span>, conecta e impulsiona mulheres contabilistas</h2>
-        <p class="lead mt-6">Cursos, palestras, workshops e encontros desenhados para o desenvolvimento profissional contínuo das associadas.</p>
+        <p class="eyebrow font-medium text-orange-500 text-xs">Desenvolvimento profissional</p>
+        <h2 class="h-1 mt-4">Desenvolvimento profissional para mulheres na <span class="italic-grad">contabilidade</span></h2>
+        <p class="lead mt-6">Participar dos cursos e eventos do IPMCONT é uma oportunidade para ampliar conhecimentos, acompanhar tendências do setor contábil e fortalecer conexões com outras profissionais da área.</p>
+        <p class="lead mt-4">A programação do instituto é pensada para contadoras, empresárias contábeis, consultoras, profissionais fiscais e tributárias, estudantes de contabilidade e mulheres que desejam crescer profissionalmente.</p>
         <div class="ihero-rule" style="margin-top:1.75rem;"></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= Tipos de programa ================= -->
+<!-- ================= Nossas iniciativas ================= -->
 <section class="section section--warm">
   <div class="container">
     <div class="sec-head"><div class="text">
-      <p class="eyebrow font-medium text-orange-500 text-xs">Tipos de programas</p>
-      <h2 class="h-1">Tudo o que você encontra na <span class="italic-grad">agenda IPMCONT</span></h2>
+      <p class="eyebrow font-medium text-orange-500 text-xs">Nossas iniciativas</p>
+      <h2 class="h-1">O que você encontra em nossos <span class="italic-grad">eventos</span></h2>
     </div></div>
-    <div class="benefits-grid" style="margin-top:3.5rem;">
-      <article class="benefit-card">
+    <div class="initiatives-grid">
+      <article class="benefit-card" style="box-shadow:none;background:transparent;padding:1rem;">
         <div class="benefit-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg></div>
-        <h3>Cursos técnicos</h3>
-        <p>Capacitação prática nas principais frentes da contabilidade, fiscal, tributária e gestão contábil.</p>
+        <h3>Cursos e capacitações</h3>
+        <p>Conteúdos voltados à atualização profissional e técnica, com especialistas convidados, focados nas demandas reais da contabilidade brasileira.</p>
         <div class="rule"></div>
       </article>
-      <article class="benefit-card">
-        <div class="benefit-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="M2 17 12 22 22 17"/><path d="M2 12 12 17 22 12"/></svg></div>
-        <h3>Workshops</h3>
-        <p>Encontros intensivos para desenvolver liderança, comunicação e habilidades estratégicas.</p>
-        <div class="rule"></div>
-      </article>
-      <article class="benefit-card">
+      <article class="benefit-card" style="box-shadow:none;background:transparent;padding:1rem;">
         <div class="benefit-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h18"/><path d="M5 11V7a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v4"/><path d="M5 11v6a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4v-6"/></svg></div>
-        <h3>Palestras</h3>
-        <p>Conteúdos com especialistas e lideranças nacionais sobre o futuro da contabilidade feminina.</p>
+        <h3>Palestras e encontros</h3>
+        <p>Momentos de conexão, troca, inspiração e atualização sobre os principais movimentos, tendências e desafios da contabilidade feminina.</p>
         <div class="rule"></div>
       </article>
-      <article class="benefit-card">
-        <div class="benefit-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg></div>
-        <h3>Eventos institucionais</h3>
-        <p>Encontros anuais, jantares e celebrações que reúnem a rede IPMCONT em todo o estado.</p>
-        <div class="rule"></div>
-      </article>
-      <article class="benefit-card">
+      <article class="benefit-card" style="box-shadow:none;background:transparent;padding:1rem;">
         <div class="benefit-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-        <h3>Mentorias</h3>
-        <p>Programas de mentoria com profissionais experientes para acelerar sua carreira contábil.</p>
+        <h3>Networking profissional</h3>
+        <p>Eventos que fortalecem conexões entre mulheres contabilistas, ampliando rede de contatos, oportunidades, parcerias e crescimento no setor contábil.</p>
         <div class="rule"></div>
       </article>
-      <article class="benefit-card">
-        <div class="benefit-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
-        <h3>Certificações</h3>
-        <p>Trilhas de atualização que reconhecem sua jornada de aprendizado dentro da comunidade.</p>
+      <article class="benefit-card" style="box-shadow:none;background:transparent;padding:1rem;">
+        <div class="benefit-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 9h1M9 13h1M9 17h1M14 9h1M14 13h1M14 17h1"/></svg></div>
+        <h3>Iniciativas institucionais</h3>
+        <p>Ações promovidas pelo IPMCONT para fortalecer a comunidade e impulsionar a participação feminina em diferentes espaços do mercado contábil.</p>
         <div class="rule"></div>
       </article>
     </div>
   </div>
 </section>
 
-<!-- ================= Para quem é ================= -->
-<section class="about-two">
+<!-- ================= Agenda ================= -->
+<section class="section">
   <div class="container">
-    <div class="grid">
-      <div class="figure">
-        <img loading="lazy" decoding="async" src="assets/images/about-trajectory.jpg" alt="Mulheres contabilistas em workshop do IPMCONT" />
+    <div class="sec-head"><div class="text">
+      <p class="eyebrow font-medium text-orange-500 text-xs">Próximos eventos</p>
+      <h2 class="h-1">Agenda de cursos e <span class="italic-grad">eventos</span></h2>
+      <p>Confira os próximos cursos, palestras, encontros e eventos promovidos pelo IPMCONT.</p>
+    </div></div>
+    <div class="agenda-grid">
+      <article class="event-card-static">
+        <span class="ev-tag"><span class="dot"></span>Evento</span>
+        <h3>Em breve — nova programação</h3>
+        <p class="desc">Os novos cursos e eventos do IPMCONT serão divulgados em breve. Acompanhe nossos canais oficiais.</p>
+        <div class="ev-meta"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg> A definir</div>
+        <div class="ev-meta"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Curitiba / PR — presencial</div>
+        <a href="contato.html" class="ev-btn">Saiba mais <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a>
+      </article>
+      <article class="event-card-static">
+        <span class="ev-tag"><span class="dot"></span>Evento</span>
+        <h3>Em breve — encontro online</h3>
+        <p class="desc">Encontro virtual aberto às associadas para troca de experiências e atualização contábil em pauta atual.</p>
+        <div class="ev-meta"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg> A definir</div>
+        <div class="ev-meta"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> Transmissão online</div>
+        <a href="contato.html" class="ev-btn">Saiba mais <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a>
+      </article>
+      <article class="event-card-static">
+        <span class="ev-tag"><span class="dot"></span>Evento</span>
+        <h3>Em breve — workshop presencial</h3>
+        <p class="desc">Workshop dedicado ao desenvolvimento profissional, com conteúdo prático e dinâmico para mulheres contabilistas.</p>
+        <div class="ev-meta"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg> A definir</div>
+        <div class="ev-meta"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Formato presencial</div>
+        <a href="contato.html" class="ev-btn">Saiba mais <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Eventos anteriores ================= -->
+<section class="section">
+  <div class="container">
+    <div class="sec-head">
+      <div class="text">
+        <p class="eyebrow font-medium text-orange-500 text-xs">Memória institucional</p>
+        <h2 class="h-1">Eventos <span class="italic-grad">anteriores</span></h2>
       </div>
-      <div>
-        <p class="eyebrow font-medium text-orange-500 text-xs">Para quem é</p>
-        <h2 class="h-1 mt-4">Para quem são os cursos e eventos do <span class="italic-grad">IPMCONT</span>?</h2>
-        <p class="lead mt-6">Programas voltados a mulheres que atuam ou desejam crescer profissionalmente na área contábil.</p>
-        <div class="values-row" style="margin-top:1.75rem;">
-          <span class="chip">Contadoras</span>
-          <span class="chip">Empresárias contábeis</span>
-          <span class="chip">Consultoras contábeis</span>
-          <span class="chip">Profissionais fiscais e tributárias</span>
-          <span class="chip">Estudantes de contabilidade</span>
-          <span class="chip">Mulheres que desejam ampliar networking</span>
+      <p style="max-width:380px; color:var(--muted);">Acompanhe também os eventos já realizados pelo IPMCONT e conheça algumas das iniciativas que fortaleceram a comunidade de mulheres contabilistas no Paraná.</p>
+    </div>
+    <div class="past-events-collage">
+      <a href="#" class="pe-main">
+        <img loading="lazy" decoding="async" src="assets/images/events-past.jpg" alt="Encontro institucional de contadoras IPMCONT" />
+        <div class="pe-overlay">
+          <span class="pe-tag">Encontro</span>
+          <h3>Encontro institucional de contadoras</h3>
         </div>
+      </a>
+      <div class="pe-grid">
+        <a href="#" class="pe-thumb"><img loading="lazy" decoding="async" src="assets/images/event-1.jpg" alt="Evento IPMCONT" /></a>
+        <a href="#" class="pe-thumb"><img loading="lazy" decoding="async" src="assets/images/event-2.jpg" alt="Evento IPMCONT" /></a>
+        <a href="#" class="pe-thumb"><img loading="lazy" decoding="async" src="assets/images/event-3.jpg" alt="Evento IPMCONT" /></a>
+        <a href="#" class="pe-thumb"><img loading="lazy" decoding="async" src="assets/images/cta-conference.jpg" alt="Evento IPMCONT" /></a>
       </div>
     </div>
   </div>
 </section>
-
-<!-- ================= Como participar ================= -->
-<section class="about-two reverse section--warm">
-  <div class="container">
-    <div class="grid">
-      <div>
-        <p class="eyebrow font-medium text-orange-500 text-xs">Como participar</p>
-        <h2 class="h-1 mt-4">Como se inscrever nos <span class="italic-grad">programas</span></h2>
-        <p class="lead mt-6">Três passos simples para participar dos cursos, palestras e eventos da comunidade IPMCONT.</p>
-        <div class="ihero-rule" style="margin-top:1.75rem;"></div>
-        <a class="btn btn--primary" href="#associar" style="margin-top:2rem;">Quero participar <span class="arrow"><svg class="ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span></a>
-      </div>
-      <div class="timeline-grid" style="grid-template-columns:1fr; gap:1rem;">
-        <article class="tl-card">
-          <p class="step">01</p>
-          <h3>Escolha um programa</h3>
-          <p>Acesse a agenda e selecione o curso, workshop ou evento que melhor se conecta ao seu momento profissional.</p>
-        </article>
-        <article class="tl-card">
-          <p class="step">02</p>
-          <h3>Realize sua inscrição</h3>
-          <p>Preencha o formulário com seus dados e confirme sua participação na atividade escolhida.</p>
-        </article>
-        <article class="tl-card">
-          <p class="step">03</p>
-          <h3>Participe e conecte-se</h3>
-          <p>Aproveite o conteúdo, troque experiências com outras profissionais e fortaleça sua rede contábil.</p>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-
-
 
 <!-- ================= Final CTA / Association Form ================= -->
 <section id="associar" class="cta-form-section">
@@ -233,14 +259,14 @@
         </div>
         <form data-static class="cta-form" novalidate>
           <div class="cta-row">
-            <div class="cta-field"><input type="text" name="nome" placeholder="Nome" required  aria-label="Nome" /><span class="cta-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span></div>
-            <div class="cta-field"><input type="email" name="email" placeholder="E-mail" required  aria-label="E-mail" /></div>
+            <div class="cta-field"><input type="text" name="nome" placeholder="Nome" required aria-label="Nome" /><span class="cta-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span></div>
+            <div class="cta-field"><input type="email" name="email" placeholder="E-mail" required aria-label="E-mail" /></div>
           </div>
           <div class="cta-row">
-            <div class="cta-field"><input type="tel" name="telefone" placeholder="Telefone / WhatsApp"  aria-label="Telefone / WhatsApp" /></div>
-            <div class="cta-field"><input type="text" name="cidade" placeholder="Cidade"  aria-label="Cidade" /></div>
+            <div class="cta-field"><input type="tel" name="telefone" placeholder="Telefone / WhatsApp" aria-label="Telefone / WhatsApp" /></div>
+            <div class="cta-field"><input type="text" name="cidade" placeholder="Cidade" aria-label="Cidade" /></div>
           </div>
-          <div class="cta-field"><input type="text" name="area" placeholder="Área de atuação"  aria-label="Área de atuação" /></div>
+          <div class="cta-field"><input type="text" name="area" placeholder="Área de atuação" aria-label="Área de atuação" /></div>
           <div class="cta-field"><textarea name="mensagem" placeholder="Conte um pouco sobre seu interesse (opcional)" rows="3" aria-label="Conte um pouco sobre seu interesse (opcional)"></textarea></div>
           <button type="submit" class="cta-submit">Quero fazer parte do IPMCONT <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></button>
         </form>
@@ -249,8 +275,9 @@
   </div>
 </section>
 
-<!-- ================= Footer ================= -->
 </main>
+
+<!-- ================= Footer ================= -->
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
@@ -300,7 +327,6 @@
   </div>
 </footer>
 
-<!-- ================= Back to top ================= -->
 <button class="back-top" aria-label="Voltar ao topo" title="Voltar ao topo"><svg class="ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="m6 11 6-6 6 6"/></svg></button>
 
 <script src="assets/js/script.js"></script>
