@@ -1309,3 +1309,127 @@ ul,ol,dl{ margin:0; padding:0; list-style:none; }
 .stat-card .lbl{
   margin-top:.85rem; font-size:.82rem; color:var(--muted); line-height:1.5;
 }
+
+/* ============================================================
+   GLOBAL DESIGN SYSTEM — Standardization Pass v3
+   Cohesive premium editorial system across all pages
+   ============================================================ */
+:root{
+  --container: 80rem;             /* 1280px standard width */
+  --container-wide: 80rem;
+  --primary: #ff6501;
+  --primary-glow: #ffb03d;
+  --primary-soft: #fffa78;
+  --ink: #000000;
+  --ink-2: #1B1B1B;
+  --stone: #C5C1B9;
+
+  --r-card: 18px;
+  --r-pill: 999px;
+
+  --shadow-card:  0 1px 2px rgba(0,0,0,.04), 0 8px 24px -14px rgba(20,12,8,.10);
+  --shadow-hover: 0 4px 10px rgba(0,0,0,.05), 0 22px 50px -18px rgba(20,12,8,.18);
+  --shadow-btn:   0 6px 18px -8px rgba(255,101,1,.45);
+
+  --ease: cubic-bezier(.22,1,.36,1);
+  --t-fast: 200ms var(--ease);
+  --t-med:  300ms var(--ease);
+  --t-slow: 600ms var(--ease);
+}
+
+/* Container alignment */
+.container{ max-width: var(--container); margin-inline:auto; }
+
+/* Section rhythm */
+.section{ padding: 6rem 0; }
+@media (min-width:1024px){ .section{ padding: 8.5rem 0; } }
+
+/* Eyebrow — locked global spec */
+.eyebrow,
+.eyebrow.font-medium.text-orange-500.text-xs{
+  font-family: var(--font-sans);
+  font-size: 12px !important;
+  line-height: 1.2;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: #ff6501 !important;
+  margin-bottom: .9rem;
+}
+
+/* Typography hierarchy */
+h1, .h-1{ font-family: var(--font-serif); font-weight:500; letter-spacing:-0.02em; line-height:1.08; }
+h2{ font-family: var(--font-serif); font-weight:500; letter-spacing:-0.018em; line-height:1.12; }
+h3{ font-family: var(--font-serif); font-weight:500; letter-spacing:-0.015em; line-height:1.2; }
+h4{ font-family: var(--font-serif); font-weight:500; letter-spacing:-0.01em; line-height:1.25; }
+p, li{ font-family: var(--font-sans); }
+.lead{ color:#5a5550; line-height:1.6; }
+
+/* Buttons — unified */
+.btn{ transition: transform var(--t-fast), box-shadow var(--t-med), background var(--t-med), color var(--t-med); border-radius: var(--r-pill); }
+.btn--primary{ background:#ff6501; color:#fff; box-shadow: var(--shadow-btn); }
+.btn--primary:hover{ transform: translateY(-1px); background:#ff7a1f; box-shadow: 0 10px 26px -8px rgba(255,101,1,.55); }
+.btn--ghost:hover{ transform: translateY(-1px); border-color:#1B1B1B; }
+
+/* Cards — unified premium feel */
+.benefit-card, .agenda-card, .tl-card, .card, .news-card{
+  background:#fff;
+  border-radius: var(--r-card);
+  box-shadow: var(--shadow-card);
+  transition: transform var(--t-med), box-shadow var(--t-med);
+}
+.benefit-card:hover, .agenda-card:hover, .tl-card:hover, .card:hover, .news-card:hover{
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* Image hover treatment */
+.figure img, .past-thumb img, .past-main img, .ihero-media img, .news-card img{
+  transition: transform var(--t-slow);
+}
+.figure:hover img, .past-thumb:hover img, .news-card:hover img{
+  transform: scale(1.03);
+}
+
+/* Forms — unified */
+.cta-form input, .cta-form textarea, input[type="text"], input[type="email"], input[type="tel"], textarea{
+  font-family: var(--font-sans);
+  border-radius: 12px;
+  transition: border-color var(--t-fast), box-shadow var(--t-fast);
+}
+.cta-form input:focus, .cta-form textarea:focus,
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, textarea:focus{
+  outline: none;
+  border-color: #ff6501;
+  box-shadow: 0 0 0 3px rgba(255,101,1,.18);
+}
+
+/* Links */
+a{ transition: color var(--t-fast); }
+.nav a:hover, .footer-col a:hover, .agenda-link:hover{ color:#ff6501; }
+
+/* Icons — consistent stroke */
+svg{ stroke-width: 1.5; }
+.cta-check svg, .btn svg{ stroke-width: 2; }
+
+/* Chips */
+.chip{ transition: background var(--t-fast), border-color var(--t-fast), color var(--t-fast); }
+.chip:hover{ border-color:#ff6501; color:#1B1B1B; }
+
+/* Fade-in on scroll (passive baseline) */
+@media (prefers-reduced-motion: no-preference){
+  .section, .ihero, .cta-card, .benefits-grid, .agenda-grid, .past-events-collage{
+    animation: fadeUp .7s var(--ease) both;
+  }
+  @keyframes fadeUp{
+    from{ opacity:0; transform: translateY(12px); }
+    to{ opacity:1; transform: none; }
+  }
+}
+
+/* Responsive guardrails */
+@media (max-width: 900px){
+  .section{ padding: 4rem 0; }
+  h1, .h-1{ font-size: clamp(2rem, 7vw, 2.6rem); }
+  h2{ font-size: clamp(1.6rem, 5.5vw, 2.1rem); }
+}
