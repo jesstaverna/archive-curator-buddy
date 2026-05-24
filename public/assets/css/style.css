@@ -224,16 +224,22 @@ ul,ol,dl{ margin:0; padding:0; list-style:none; }
 
 .hero-figure{ position:relative; }
 .hero-figure .img-wrap{
-  position:relative; overflow:hidden; border-radius:var(--r-2xl);
-  box-shadow: var(--shadow-elegant);
+  position:relative; overflow:visible;
 }
-.hero-figure img{ width:100%; height:480px; object-fit:cover; }
+.hero-figure img{
+  width:100%; height:480px; object-fit:cover;
+  border-radius:var(--r-2xl);
+  box-shadow: var(--shadow-elegant);
+  display:block;
+}
 @media (min-width:768px){ .hero-figure img{ height:640px; } }
 .hero-figure .badge{
-  position:absolute; left:1.5rem; right:1.5rem; bottom:1.5rem;
-  display:flex; align-items:center; gap:.75rem;
-  background:rgba(255,255,255,.95); backdrop-filter: blur(8px);
-  border-radius:var(--r-lg); padding:1rem;
+  position:absolute; right:-1rem; bottom:-1.5rem;
+  display:flex; align-items:center; gap:.85rem;
+  background:#FFFDF8; border:1px solid #EFE9DF;
+  border-radius:18px; padding:1rem 1.25rem;
+  box-shadow: 0 24px 60px -22px rgba(20,12,8,.22);
+  max-width: 340px; z-index: 3;
 }
 .hero-figure .badge .icon{
   width:42px; height:42px; border-radius:999px;
@@ -250,20 +256,25 @@ ul,ol,dl{ margin:0; padding:0; list-style:none; }
 /* ---------- Sobre block ---------- */
 .about-grid{ display:grid; gap:4rem; align-items:start; }
 @media (min-width:1024px){ .about-grid{ grid-template-columns: 5fr 7fr; } }
-.about-img{ position:relative; }
+.about-img{ position:relative; overflow:visible; }
 .about-img img{
   aspect-ratio:4/5; width:100%; object-fit:cover;
-  border-radius:var(--r-2xl); box-shadow:var(--shadow-soft);
+  border-radius:var(--r-2xl); box-shadow:var(--shadow-elegant);
+  display:block;
 }
 .about-badge{
-  position:absolute; right:-1rem; bottom:-2rem;
-  background:var(--foreground); color:#fff; padding:1.5rem;
-  border-radius:var(--r-lg); box-shadow:var(--shadow-elegant);
-  display:none;
+  position:absolute; right:-1.5rem; bottom:-1.5rem;
+  background:#FFFDF8; border:1px solid #EFE9DF;
+  padding: 1.1rem 1.6rem 1.25rem;
+  border-radius:18px; box-shadow: 0 24px 60px -22px rgba(20,12,8,.22);
+  display:none; min-width: 200px; z-index: 3;
 }
 @media (min-width:768px){ .about-badge{ display:block; } }
-.about-badge p:first-child{ font-family:var(--font-serif); font-size:2.25rem; line-height:1; }
-.about-badge p:last-child{ font-size:.7rem; text-transform:uppercase; letter-spacing:.18em; color:rgba(255,255,255,.7); margin-top:.35rem; }
+.about-badge .eyebrow{ margin:0 0 .35rem; }
+.about-badge .yb-title{
+  font-family: var(--font-serif); font-size: 1.85rem; line-height:1;
+  color:#1B1B1B; font-weight:500; letter-spacing:-0.01em;
+}
 .about-body{ margin-top:1.5rem; display:flex; flex-direction:column; gap:1.25rem; }
 .about-body p{ color:var(--muted); font-size:1.05rem; line-height:1.75; }
 
@@ -1143,11 +1154,16 @@ ul,ol,dl{ margin:0; padding:0; list-style:none; }
   .about-intro .grid{ grid-template-columns: 1fr 1fr; gap: 4.5rem; }
 }
 .about-intro .figure{
-  position:relative; border-radius: 22px; overflow:hidden;
-  box-shadow: var(--shadow-elegant);
+  position:relative;
   aspect-ratio: 4/5;
+  overflow: visible;
 }
-.about-intro .figure img{ width:100%; height:100%; object-fit:cover; }
+.about-intro .figure img{
+  width:100%; height:100%; object-fit:cover;
+  border-radius: 22px;
+  box-shadow: var(--shadow-elegant);
+  display:block;
+}
 .about-intro .year-badge{
   position:absolute; right: -18px; bottom: -18px;
   background:#fff; color:#1B1B1B;
