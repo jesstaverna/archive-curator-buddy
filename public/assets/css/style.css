@@ -539,8 +539,8 @@ ul,ol,dl{ margin:0; padding:0; list-style:none; }
 
 /* ---------- Refinement pass: editorial proportions + icon polish ---------- */
 :root{
-  --container: 80rem;       /* 1280px premium editorial max */
-  --container-wide: 80rem;
+  --container: 83.75rem;    /* 1340px premium editorial max */
+  --container-wide: 83.75rem;
 }
 /* Responsive padding: 16px mobile, 24px tablet, 32px desktop */
 .container{ padding-inline: 1rem; }
