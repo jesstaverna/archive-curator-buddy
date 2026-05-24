@@ -646,7 +646,7 @@ ul,ol,dl{ margin:0; padding:0; list-style:none; }
   padding: 3.5rem 4rem 4rem;
   color: #F1ECE6;
 }
-.cta-eyebrow{ color: var(--primary-glow) !important; }
+.cta-eyebrow{ color:#ff6501 !important; letter-spacing:.22em; }
 .cta-title{
   font-family: var(--font-serif);
   font-size: clamp(2rem, 3.4vw, 3rem);
