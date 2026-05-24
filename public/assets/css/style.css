@@ -532,11 +532,16 @@ ul,ol,dl{ margin:0; padding:0; list-style:none; }
 
 /* ---------- Refinement pass: editorial proportions + icon polish ---------- */
 :root{
-  --container: 74rem;       /* tightened from 80rem for editorial feel */
+  --container: 80rem;       /* 1280px premium editorial max */
   --container-wide: 80rem;
 }
-@media (min-width:1280px){
-  .container{ padding-inline: 2.5rem; }
+/* Responsive padding: 16px mobile, 24px tablet, 32px desktop */
+.container{ padding-inline: 1rem; }
+@media (min-width:640px){
+  .container{ padding-inline: 1.5rem; }
+}
+@media (min-width:1024px){
+  .container{ padding-inline: 2rem; }
 }
 .section{ padding: 5.5rem 0; }
 @media (min-width:1024px){ .section{ padding: 7rem 0; } }
