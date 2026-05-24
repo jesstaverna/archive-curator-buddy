@@ -72,14 +72,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "IPMCONT" },
+      { name: "description", content: "Archive Hub imports and recreates websites from uploaded archive files, preserving layout, structure, and design." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "IPMCONT" },
+      { property: "og:description", content: "Archive Hub imports and recreates websites from uploaded archive files, preserving layout, structure, and design." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "IPMCONT" },
+      { name: "twitter:description", content: "Archive Hub imports and recreates websites from uploaded archive files, preserving layout, structure, and design." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/001c9b30-4d58-4ae3-aa60-01606161a6d7/id-preview-1bc6d62f--1f25ee17-e569-4ec0-b169-b58ba8665dab.lovable.app-1779648123385.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/001c9b30-4d58-4ae3-aa60-01606161a6d7/id-preview-1bc6d62f--1f25ee17-e569-4ec0-b169-b58ba8665dab.lovable.app-1779648123385.png" },
     ],
     links: [
       {
