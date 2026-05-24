@@ -1832,3 +1832,42 @@ svg{ stroke-width: 1.5; }
 .loc-rings span:nth-child(1){ width: 140px; height: 140px; }
 .loc-rings span:nth-child(2){ width: 220px; height: 220px; border-color: rgba(255,101,1,.16); }
 .loc-rings span:nth-child(3){ width: 320px; height: 320px; border-color: rgba(255,101,1,.10); }
+
+/* ---------- Load more (Associadas) ---------- */
+.associada-hidden{ display:none !important; }
+.associada-reveal{
+  display:block;
+  animation: associadaFadeIn .55s ease both;
+}
+@keyframes associadaFadeIn{
+  from{ opacity:0; transform: translateY(12px); }
+  to  { opacity:1; transform: translateY(0); }
+}
+.load-more-wrap{
+  display:flex; justify-content:center; margin-top: 3rem;
+}
+.btn-load-more{
+  display:inline-flex; align-items:center; gap:.65rem;
+  padding: .95rem 1.75rem;
+  background: #FFFDF8; color:#1B1B1B;
+  border:1px solid #E8E2D8; border-radius: 999px;
+  font: 500 .9rem/1 var(--font-sans);
+  letter-spacing:.02em; cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0,0,0,.03), 0 14px 32px -20px rgba(20,12,8,.15);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease, color .25s ease, background .25s ease;
+}
+.btn-load-more .arrow{
+  display:inline-flex; width:28px; height:28px; border-radius:999px;
+  background:#FFF1E6; color:#ff6501;
+  align-items:center; justify-content:center;
+  transition: transform .25s ease, background .25s ease;
+}
+.btn-load-more:hover{
+  transform: translateY(-2px);
+  border-color:#FFC79A; color:#ff6501;
+  box-shadow: 0 4px 10px rgba(0,0,0,.04), 0 22px 50px -18px rgba(255,101,1,.28);
+}
+.btn-load-more:hover .arrow{ background:#FFE7D3; transform: translateY(2px); }
+.btn-load-more:focus-visible{
+  outline:none; box-shadow: 0 0 0 4px rgba(255,101,1,.18);
+}
