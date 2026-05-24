@@ -580,8 +580,8 @@ ul,ol,dl{ margin:0; padding:0; list-style:none; }
 
 /* ---------- Header navigation: single-line on laptops ---------- */
 .header-inner{ gap: 1.5rem; }
-.brand img{ height: 4rem; }
-.site-header.is-scrolled .brand img{ height: 3.25rem; }
+.brand img{ height: 3.5rem; }
+.site-header.is-scrolled .brand img{ height: 3rem; }
 .brand-sub{ display:block !important; font-size:.62rem; letter-spacing:.18em; }
 .nav{ gap: .1rem; flex-wrap: nowrap; }
 .nav a{
@@ -602,6 +602,9 @@ ul,ol,dl{ margin:0; padding:0; list-style:none; }
 @media (min-width:1440px){
   .nav a{ padding:.55rem 1rem; font-size:.875rem; }
 }
+
+/* Hide hero stats row — not in the approved hero reference */
+.hero-stats{ display:none !important; }
 
 /* ============================================================
    CTA FORM SECTION (dark premium with image banner)
