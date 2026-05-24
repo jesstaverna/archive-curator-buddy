@@ -1018,3 +1018,16 @@ ul,ol,dl{ margin:0; padding:0; list-style:none; }
   font-size:.875rem;
 }
 .skip-link:focus{ left:0; }
+
+/* ---------- Certificado Digital button ---------- */
+.btn--cert{ gap:.5rem; }
+.btn--cert .btn-ico{
+  transition: transform .35s cubic-bezier(.22,1,.36,1), color .3s;
+  color: #ff6501;
+}
+.btn--cert:hover{
+  transform: translateY(-1px);
+  background: rgba(255,101,1,.04);
+  border-color: #ff6501;
+}
+.btn--cert:hover .btn-ico{ transform: scale(1.08); }
