@@ -529,3 +529,42 @@ ul,ol,dl{ margin:0; padding:0; list-style:none; }
 /* ---------- Animations ---------- */
 @keyframes fade-up{ from{ opacity:0; transform: translateY(20px); } to{ opacity:1; transform:none; } }
 .fade-up{ animation: fade-up .8s cubic-bezier(.22,1,.36,1) both; }
+
+/* ---------- Refinement pass: editorial proportions + icon polish ---------- */
+:root{
+  --container: 74rem;       /* tightened from 80rem for editorial feel */
+  --container-wide: 80rem;
+}
+@media (min-width:1280px){
+  .container{ padding-inline: 2.5rem; }
+}
+.section{ padding: 5.5rem 0; }
+@media (min-width:1024px){ .section{ padding: 7rem 0; } }
+
+/* Refined SVG icon system */
+.benefit-icon svg{ width:22px; height:22px; stroke-width:1.5; transition: transform .35s cubic-bezier(.22,1,.36,1), color .3s; }
+.benefit-card:hover .benefit-icon svg{ transform: translateY(-2px) scale(1.06); }
+
+.hero-figure .badge .icon svg{ width:20px; height:20px; stroke:#fff; }
+.card .meta svg{ width:14px; height:14px; vertical-align:-2px; margin-right:.35rem; opacity:.8; }
+.btn svg{ width:16px; height:16px; transition: transform .3s cubic-bezier(.22,1,.36,1); }
+.btn:hover svg{ transform: translate(2px,-2px); }
+.btn .arrow svg{ width:14px; height:14px; }
+.link-arrow svg{ width:14px; height:14px; transition: transform .3s cubic-bezier(.22,1,.36,1); }
+.link-arrow:hover svg{ transform: translate(3px,-1px); }
+.podcast-list .pico svg{ width:20px; height:20px; }
+.podcast-video .play span svg{ width:28px; height:28px; margin-left:3px; }
+.stars svg{ display:inline-block; margin-right:1px; }
+.back-top svg{ width:18px; height:18px; transition: transform .3s; }
+.back-top:hover svg{ transform: translateY(-2px); }
+.menu-toggle svg{ width:20px; height:20px; }
+
+/* Slightly tighter editorial rhythm for hero & page hero */
+.hero{ padding-top: 8.5rem; padding-bottom: 5rem; }
+@media (min-width:768px){ .hero{ padding-top: 10rem; padding-bottom: 7rem; } }
+.page-hero{ padding-top: 8.5rem; padding-bottom: 4.5rem; }
+@media (min-width:768px){ .page-hero{ padding-top: 10rem; padding-bottom: 6rem; } }
+
+/* Slightly narrower body copy max-width inside section heads for readability */
+.sec-head .text{ max-width: 38rem; }
+.hero p.lead{ max-width: 34rem; }
