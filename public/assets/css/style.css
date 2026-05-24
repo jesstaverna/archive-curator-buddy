@@ -582,7 +582,12 @@ ul,ol,dl{ margin:0; padding:0; list-style:none; }
 .header-inner{ gap: 1.5rem; }
 .brand img{ height: 3.5rem; }
 .site-header.is-scrolled .brand img{ height: 3rem; }
-.brand-sub{ display:block !important; font-size:.62rem; letter-spacing:.18em; }
+.brand-sub{
+  display:block !important;
+  font-size:.62rem; letter-spacing:.18em;
+  white-space:nowrap;
+}
+.menu-toggle{ display:none !important; }
 .nav{ gap: .1rem; flex-wrap: nowrap; }
 .nav a{
   padding: .5rem .7rem;
