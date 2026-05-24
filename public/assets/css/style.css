@@ -420,6 +420,10 @@ ul,ol,dl{ margin:0; padding:0; list-style:none; }
   box-shadow: 0 0 0 1px rgba(20,12,8,.06);
 }
 @media (min-width:768px){ .member{ flex-basis:300px; } }
+@media (min-width:1024px){
+  .carousel{ gap:1.25rem; }
+  .member{ flex-basis: calc((100% - 3 * 1.25rem) / 4); }
+}
 .member img{ aspect-ratio:4/5; width:100%; object-fit:cover; transition: transform .7s; }
 .member:hover img{ transform:scale(1.05); }
 .member figcaption{
