@@ -50,63 +50,154 @@
   </div>
 </header>
 
-<!-- ================= Page Hero ================= -->
-<section class="page-hero">
-  <div class="container page-hero-grid">
-    <div class="fade-up">
-      <p class="eyebrow">Notícias</p>
-      <h1 class="h-display mt-4">Editorial sobre <span class="italic-grad">contabilidade feminina</span></h1>
-      <p class="lead mt-6" style="max-width:38rem;">Conteúdo produzido pelo IPMCONT e por associadas — carreira, liderança, mercado e atualização técnica.</p>
-      <div class="hero-ctas">
-        <a class="btn btn--primary" href="contato.html#associar">Associe-se ao IPMCONT <span class="arrow"><svg class="ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span></a>
-        <a class="btn btn--ghost" href="#conteudo">Saiba mais <svg class="ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+
+<!-- ================= Blog Hero ================= -->
+<section class="blog-hero">
+  <div class="container">
+    <p class="eyebrow">Notícias</p>
+    <h1 class="h-display mt-4">Editorial sobre <span class="italic-grad">contabilidade feminina</span></h1>
+    <p class="lead">Conteúdo produzido pelo IPMCONT e por associadas — carreira, liderança, mercado contábil, atualização técnica e histórias da nossa comunidade.</p>
+  </div>
+</section>
+
+<!-- ================= Featured + Grid ================= -->
+<section class="section" id="conteudo">
+  <div class="container">
+
+    <!-- Featured article -->
+    <article class="featured-article">
+      <div class="fa-img">
+        <img src="assets/images/article-2.jpg" alt="Liderança feminina: o novo capítulo da contabilidade" />
+      </div>
+      <div>
+        <div class="fa-meta">
+          <span class="fa-cat">Liderança feminina</span>
+          <span class="fa-date">12 Mar 2026 · Em destaque</span>
+        </div>
+        <h2>Liderança feminina: o novo capítulo da contabilidade</h2>
+        <p>Por que cada vez mais mulheres ocupam cadeiras estratégicas no setor contábil paranaense — e o que isso revela sobre o futuro da profissão. Uma análise editorial das últimas duas décadas e os caminhos que se abrem.</p>
+        <a href="#" class="ac-link" style="margin-top:1.5rem;">Ler artigo completo
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- Tools: tabs + search -->
+    <div class="blog-tools">
+      <div class="blog-tabs">
+        <button class="blog-tab is-active" data-cat="all">Todos</button>
+        <button class="blog-tab" data-cat="noticias">Notícias</button>
+        <button class="blog-tab" data-cat="eventos">Eventos</button>
+        <button class="blog-tab" data-cat="contabilidade">Contabilidade</button>
+        <button class="blog-tab" data-cat="lideranca">Liderança feminina</button>
+        <button class="blog-tab" data-cat="empreendedorismo">Empreendedorismo</button>
+        <button class="blog-tab" data-cat="ipmcont">IPMCONT</button>
+      </div>
+      <div class="blog-search">
+        <span class="bs-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span>
+        <input id="blog-search" type="search" placeholder="Buscar artigos…" />
       </div>
     </div>
-    <figure class="page-hero-figure">
-      <img src="assets/images/article-2.jpg" alt="Conteúdo editorial sobre contabilidade feminina IPMCONT" />
-    </figure>
-  </div>
-</section>
 
+    <!-- Grid -->
+    <div class="blog-grid">
 
-<section id="conteudo" class="section">
-  <div class="container">
-    <div class="sec-head"><div class="text">
-      <p class="eyebrow">Últimas publicações</p>
-      <h2 class="h-1">Artigos, notícias e conteúdos do instituto</h2>
-      <p>Conteúdo editorial sobre contabilidade feminina, carreira, liderança, fiscal e tributário.</p>
-    </div></div>
-    <div class="cards-grid">
-      
-      <article class="card">
-        <div class="media"><img src="assets/images/article-1.jpg" alt="5 hábitos das contabilistas que se destacam" loading="lazy" /></div>
-        <div class="body"><div class="meta"><span style="background:var(--surface-2); padding:.25rem .6rem; border-radius:999px; text-transform:uppercase; letter-spacing:.08em; font-weight:500; color:var(--foreground);">Carreira</span> · 13 Nov 2025</div><h3>5 hábitos das contabilistas que se destacam</h3><p>Práticas que diferenciam profissionais em ascensão.</p><a href="#" class="link-arrow mt-4">Ler artigo <svg class="ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a></div>
+      <article class="article-card" data-category="lideranca">
+        <div class="ac-img"><img src="assets/images/article-1.jpg" alt="5 hábitos das contabilistas que se destacam" loading="lazy" /></div>
+        <div class="ac-body">
+          <div class="ac-meta"><span class="ac-cat">Liderança feminina</span><span class="ac-date">13 Nov 2025</span></div>
+          <h3>5 hábitos das contabilistas que se destacam</h3>
+          <p>Práticas que diferenciam profissionais em ascensão no mercado contábil paranaense.</p>
+          <a href="#" class="ac-link">Ler mais <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a>
+        </div>
       </article>
-      <article class="card">
-        <div class="media"><img src="assets/images/article-2.jpg" alt="Liderança feminina: o novo capítulo da contabilidade" loading="lazy" /></div>
-        <div class="body"><div class="meta"><span style="background:var(--surface-2); padding:.25rem .6rem; border-radius:999px; text-transform:uppercase; letter-spacing:.08em; font-weight:500; color:var(--foreground);">Liderança</span> · 12 Mar 2026</div><h3>Liderança feminina: o novo capítulo da contabilidade</h3><p>Por que mais mulheres ocupam cadeiras estratégicas.</p><a href="#" class="link-arrow mt-4">Ler artigo <svg class="ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a></div>
+
+      <article class="article-card" data-category="ipmcont">
+        <div class="ac-img"><img src="assets/images/article-3.jpg" alt="IPMCONT completa duas décadas" loading="lazy" /></div>
+        <div class="ac-body">
+          <div class="ac-meta"><span class="ac-cat">IPMCONT</span><span class="ac-date">29 Out 2025</span></div>
+          <h3>IPMCONT completa duas décadas fortalecendo a classe</h3>
+          <p>Um marco histórico para a contabilidade feminina paranaense e o legado das nossas associadas.</p>
+          <a href="#" class="ac-link">Ler mais <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a>
+        </div>
       </article>
-      <article class="card">
-        <div class="media"><img src="assets/images/article-3.jpg" alt="IPMCONT completa duas décadas fortalecendo a classe" loading="lazy" /></div>
-        <div class="body"><div class="meta"><span style="background:var(--surface-2); padding:.25rem .6rem; border-radius:999px; text-transform:uppercase; letter-spacing:.08em; font-weight:500; color:var(--foreground);">Comunidade</span> · 29 Out 2025</div><h3>IPMCONT completa duas décadas fortalecendo a classe</h3><p>Um marco histórico para a contabilidade feminina paranaense.</p><a href="#" class="link-arrow mt-4">Ler artigo <svg class="ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a></div>
+
+      <article class="article-card" data-category="eventos">
+        <div class="ac-img"><img src="assets/images/event-1.jpg" alt="Encontro Anual da Mulher Contabilista" loading="lazy" /></div>
+        <div class="ac-body">
+          <div class="ac-meta"><span class="ac-cat">Eventos</span><span class="ac-date">22 Mar 2026</span></div>
+          <h3>Encontro Anual reúne lideranças contábeis em Curitiba</h3>
+          <p>Conexões, palestras e troca entre lideranças marcaram o evento do ano para mulheres da contabilidade.</p>
+          <a href="#" class="ac-link">Ler mais <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a>
+        </div>
       </article>
-      <article class="card">
-        <div class="media"><img src="assets/images/article-1.jpg" alt="Mudanças tributárias 2026: o que muda para escritórios" loading="lazy" /></div>
-        <div class="body"><div class="meta"><span style="background:var(--surface-2); padding:.25rem .6rem; border-radius:999px; text-transform:uppercase; letter-spacing:.08em; font-weight:500; color:var(--foreground);">Fiscal</span> · 05 Fev 2026</div><h3>Mudanças tributárias 2026: o que muda para escritórios</h3><p>Análise prática das principais alterações.</p><a href="#" class="link-arrow mt-4">Ler artigo <svg class="ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a></div>
+
+      <article class="article-card" data-category="contabilidade">
+        <div class="ac-img"><img src="assets/images/event-2.jpg" alt="Reforma tributária: o que muda em 2026" loading="lazy" /></div>
+        <div class="ac-body">
+          <div class="ac-meta"><span class="ac-cat">Contabilidade</span><span class="ac-date">07 Fev 2026</span></div>
+          <h3>Reforma tributária: o que muda na rotina do escritório contábil</h3>
+          <p>Guia prático com os principais pontos que toda contabilista precisa observar a partir deste ano.</p>
+          <a href="#" class="ac-link">Ler mais <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a>
+        </div>
       </article>
-      <article class="card">
-        <div class="media"><img src="assets/images/article-2.jpg" alt="Contabilidade consultiva: a virada estratégica" loading="lazy" /></div>
-        <div class="body"><div class="meta"><span style="background:var(--surface-2); padding:.25rem .6rem; border-radius:999px; text-transform:uppercase; letter-spacing:.08em; font-weight:500; color:var(--foreground);">Mercado</span> · 21 Jan 2026</div><h3>Contabilidade consultiva: a virada estratégica</h3><p>Como migrar do operacional ao consultivo.</p><a href="#" class="link-arrow mt-4">Ler artigo <svg class="ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a></div>
+
+      <article class="article-card" data-category="empreendedorismo">
+        <div class="ac-img"><img src="assets/images/event-3.jpg" alt="Como abrir seu escritório contábil" loading="lazy" /></div>
+        <div class="ac-body">
+          <div class="ac-meta"><span class="ac-cat">Empreendedorismo</span><span class="ac-date">18 Jan 2026</span></div>
+          <h3>Como abrir o próprio escritório contábil: um roteiro para mulheres</h3>
+          <p>Da estruturação jurídica à captação dos primeiros clientes — um passo a passo construído por associadas.</p>
+          <a href="#" class="ac-link">Ler mais <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a>
+        </div>
       </article>
-      <article class="card">
-        <div class="media"><img src="assets/images/article-3.jpg" alt="Maternidade e carreira na contabilidade" loading="lazy" /></div>
-        <div class="body"><div class="meta"><span style="background:var(--surface-2); padding:.25rem .6rem; border-radius:999px; text-transform:uppercase; letter-spacing:.08em; font-weight:500; color:var(--foreground);">Carreira</span> · 03 Dez 2025</div><h3>Maternidade e carreira na contabilidade</h3><p>Vivências reais de associadas do instituto.</p><a href="#" class="link-arrow mt-4">Ler artigo <svg class="ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a></div>
+
+      <article class="article-card" data-category="noticias">
+        <div class="ac-img"><img src="assets/images/podcast-studio.jpg" alt="Novo episódio do Podcast IPMCONT" loading="lazy" /></div>
+        <div class="ac-body">
+          <div class="ac-meta"><span class="ac-cat">Notícias</span><span class="ac-date">02 Fev 2026</span></div>
+          <h3>Novo episódio do Podcast IPMCONT debate carreira e maternidade</h3>
+          <p>Conversa franca entre contabilistas que conciliam carreira de alto desempenho e vida familiar.</p>
+          <a href="#" class="ac-link">Ler mais <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a>
+        </div>
       </article>
+
+      <article class="article-card" data-category="lideranca">
+        <div class="ac-img"><img src="assets/images/about-women.jpg" alt="Mulheres em cargos de decisão" loading="lazy" /></div>
+        <div class="ac-body">
+          <div class="ac-meta"><span class="ac-cat">Liderança feminina</span><span class="ac-date">21 Dez 2025</span></div>
+          <h3>Mulheres em cargos de decisão: o que mudou na última década</h3>
+          <p>Dados, depoimentos e perspectivas sobre a presença feminina em conselhos contábeis no Paraná.</p>
+          <a href="#" class="ac-link">Ler mais <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a>
+        </div>
+      </article>
+
+      <article class="article-card" data-category="ipmcont">
+        <div class="ac-img"><img src="assets/images/about-board.jpg" alt="Nova diretoria do IPMCONT" loading="lazy" /></div>
+        <div class="ac-body">
+          <div class="ac-meta"><span class="ac-cat">IPMCONT</span><span class="ac-date">15 Nov 2025</span></div>
+          <h3>Conheça a nova diretoria eleita para o triênio 2026—2028</h3>
+          <p>Cinco contadoras assumem a liderança do instituto com um plano focado em capacitação e expansão regional.</p>
+          <a href="#" class="ac-link">Ler mais <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a>
+        </div>
+      </article>
+
+      <article class="article-card" data-category="contabilidade">
+        <div class="ac-img"><img src="assets/images/events-past.jpg" alt="ICMS e Difal — atualizações" loading="lazy" /></div>
+        <div class="ac-body">
+          <div class="ac-meta"><span class="ac-cat">Contabilidade</span><span class="ac-date">04 Nov 2025</span></div>
+          <h3>ICMS e Difal: as atualizações que afetam o varejo em 2026</h3>
+          <p>Análise técnica preparada por nossas especialistas tributárias para auxiliar escritórios e empresas.</p>
+          <a href="#" class="ac-link">Ler mais <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a>
+        </div>
+      </article>
+
     </div>
+
+    <button class="blog-loadmore" type="button">Carregar mais artigos</button>
+
   </div>
 </section>
-
-
 
 <!-- ================= Final CTA / Association Form ================= -->
 <section id="associar" class="cta-form-section">
