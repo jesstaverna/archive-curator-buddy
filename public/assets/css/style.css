@@ -408,7 +408,7 @@ ul,ol,dl{ margin:0; padding:0; list-style:none; }
 
 /* ---------- Members carousel ---------- */
 .carousel{
-  display:flex; gap:.75rem; overflow-x:auto;
+  display:flex; gap:1.25rem; overflow:hidden;
   scroll-snap-type: x mandatory;
   padding-bottom:.5rem; margin-top:2.25rem;
   scrollbar-width: none;
@@ -424,8 +424,8 @@ ul,ol,dl{ margin:0; padding:0; list-style:none; }
 }
 @media (min-width:768px){ .member{ flex-basis:300px; } }
 @media (min-width:1024px){
-  .carousel{ gap:.75rem; }
-  .member{ flex-basis: calc((100% - 3 * .75rem) / 4); }
+  .carousel{ gap:1.25rem; }
+  .member{ flex: 0 0 calc((100% - 3 * 1.25rem) / 4); min-width:0; }
 }
 .member img{ aspect-ratio: 3/4; width:100%; object-fit:cover; object-position: center 20%; transition: transform .7s; }
 .member:hover img{ transform:scale(1.05); }
