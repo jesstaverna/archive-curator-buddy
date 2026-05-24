@@ -1,0 +1,13 @@
+# IPMCONT — Instituto Paranaense da Mulher Contabilista
+
+> Comunidade que conecta, capacita e impulsiona mulheres contabilistas no Paraná por meio de networking, eventos, cursos e desenvolvimento profissional.
+
+## Pages
+
+- [Home](/index.html): Visão geral do instituto, benefícios e como se associar.
+- [Sobre](/sobre.html): História, missão e valores do IPMCONT.
+- [Benefícios](/beneficios.html): Vantagens exclusivas para associadas.
+- [Cursos e Eventos](/cursos-eventos.html): Agenda de formações, encontros e conferências.
+- [Notícias](/noticias.html): Artigos editoriais, novidades e conteúdos para contabilistas.
+- [Associadas](/associadas.html): Profissionais que fazem parte da comunidade.
+- [Contato](/contato.html): Canais de contato e formulário de associação.
