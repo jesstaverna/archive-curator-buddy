@@ -56,12 +56,13 @@
 <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
 <!-- ================= Header ================= -->
-<header class="site-header">
+<header class="site-header" data-component="Header">
   <div class="container header-inner">
     <a class="brand" href="index.html">
       <img src="assets/images/logo-ipmcont.png" alt="IPMCONT — Instituto Paranaense da Mulher Contabilista" />
       <span class="brand-sub"><span>Instituto Paranaense</span><span>da Mulher Contabilista</span></span>
     </a>
+
     <nav class="nav" aria-label="Navegação principal">
       <a href="sobre.html">Sobre</a>
       <a href="beneficios.html">Benefícios</a>
@@ -70,12 +71,15 @@
       <a href="associadas.html">Associadas</a>
       <a href="contato.html">Contato</a>
     </nav>
+
     <div class="header-cta">
       <a href="#certificado" class="btn btn--ghost btn--cert"><svg class="btn-ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg><span>Certificado Digital</span></a>
       <a href="contato.html#associar" class="btn btn--primary">Associe-se <span class="arrow"><svg class="ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span></a>
     </div>
+
     <button class="menu-toggle" aria-label="Abrir menu" aria-controls="mobile-menu"><svg class="ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
+
   <div id="mobile-menu" class="mobile-menu">
     <div class="container">
       <a href="sobre.html">Sobre</a>
@@ -142,25 +146,25 @@
       <h2 class="h-1">O que você encontra em nossos <span class="italic-grad">eventos</span></h2>
     </div></div>
     <div class="benefits-grid benefits-grid--2x2" style="margin-top:3.5rem;">
-      <article class="benefit-card">
+      <article data-component="Card" class="benefit-card">
         <div class="benefit-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg></div>
         <h3>Cursos e capacitações</h3>
         <p>Conteúdos voltados à atualização profissional, gestão contábil, desenvolvimento de carreira, liderança feminina e temas relevantes para o mercado contábil.</p>
         <div class="rule"></div>
       </article>
-      <article class="benefit-card">
+      <article data-component="Card" class="benefit-card">
         <div class="benefit-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg></div>
         <h3>Palestras e encontros</h3>
         <p>Momentos de aprendizado, inspiração e troca de experiências com profissionais, especialistas e mulheres que atuam na contabilidade.</p>
         <div class="rule"></div>
       </article>
-      <article class="benefit-card">
+      <article data-component="Card" class="benefit-card">
         <div class="benefit-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
         <h3>Networking profissional</h3>
         <p>Eventos que fortalecem conexões entre mulheres contabilistas, ampliando oportunidades de relacionamento, parceria e crescimento no setor contábil.</p>
         <div class="rule"></div>
       </article>
-      <article class="benefit-card">
+      <article data-component="Card" class="benefit-card">
         <div class="benefit-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.6 4.4L18 9l-4.4 1.6L12 15l-1.6-4.4L6 9l4.4-1.6L12 3z"/><path d="M19 14l.8 2.2L22 17l-2.2.8L19 20l-.8-2.2L16 17l2.2-.8L19 14z"/></svg></div>
         <h3>Iniciativas institucionais</h3>
         <p>Ações promovidas pelo IPMCONT para valorizar a mulher contabilista e incentivar sua participação em diferentes espaços do mercado.</p>
@@ -278,7 +282,7 @@
 </main>
 
 <!-- ================= Footer ================= -->
-<footer class="site-footer">
+<footer data-component="Footer" class="site-footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
