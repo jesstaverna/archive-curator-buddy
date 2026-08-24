@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "sdk_version": "0.28.0",
+  "path": "/mcp",
+  "auth": {
+    "type": "oauth",
+    "issuer": "https://vqedijewmaqsjwzdnebp.supabase.co/auth/v1",
+    "accepted_audiences": [
+      "authenticated"
+    ]
+  },
+  "mcp": {
+    "server": {
+      "name": "ipmcont-site",
+      "version": "0.1.0",
+      "title": "IPMCONT SITE"
+    },
+    "tools": [
+      {
+        "name": "list_pages",
+        "title": "Listar páginas do site",
+        "description": "Lista todas as páginas públicas do site do IPMCONT com título, descrição e URL.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "get_page_content",
+        "title": "Ler conteúdo de uma página",
+        "description": "Retorna o texto principal de uma página pública do site do IPMCONT, identificada pelo slug (ex.: sobre, beneficios, contato).",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": true
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "slug": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Slug da página, conforme retornado por list_pages."
+            }
+          },
+          "required": [
+            "slug"
+          ]
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "search_site",
+        "title": "Buscar páginas por assunto",
+        "description": "Busca páginas do site do IPMCONT por palavra-chave em títulos, descrições e tópicos, retornando as mais relevantes.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "query": {
+              "type": "string",
+              "minLength": 2,
+              "description": "Termo de busca, ex.: 'cursos', 'associação', 'história'."
+            }
+          },
+          "required": [
+            "query"
+          ]
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "get_organization_info",
+        "title": "Dados institucionais e de contato",
+        "description": "Retorna os dados institucionais do IPMCONT: nome, ano de fundação, e-mail, telefone, localização, horário de atendimento e link de associação.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
