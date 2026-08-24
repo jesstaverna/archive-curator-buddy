@@ -25,12 +25,48 @@
     window.scrollTo({ top:0, behavior:'smooth' });
   });
 
-  // Simple form (no backend)
+  // Contact form — envia por e-mail (sem backend)
   document.querySelectorAll('form[data-static]').forEach(function(f){
+    var status = f.querySelector('.cf-status');
+    if (!status) {
+      status = document.createElement('p');
+      status.className = 'cf-status';
+      status.setAttribute('role', 'status');
+      status.setAttribute('aria-live', 'polite');
+      status.hidden = true;
+      f.appendChild(status);
+    }
+
     f.addEventListener('submit', function(e){
       e.preventDefault();
-      alert('Obrigado! Em uma implementação final, este envio seria processado pelo servidor.');
-      f.reset();
+
+      if (!f.checkValidity()) {
+        f.reportValidity();
+        status.hidden = false;
+        status.textContent = 'Preencha nome e e-mail válidos para enviar sua mensagem.';
+        return;
+      }
+
+      var data = new FormData(f);
+      var to = f.getAttribute('data-mailto') || 'presidente@ipmcont.com.br';
+      var subject = (data.get('assunto') || 'Contato pelo site IPMCONT').toString();
+      var body = [
+        'Nome: ' + (data.get('nome') || ''),
+        'E-mail: ' + (data.get('email') || ''),
+        'Telefone/WhatsApp: ' + (data.get('telefone') || ''),
+        '',
+        'Mensagem:',
+        (data.get('mensagem') || '')
+      ].join('\n');
+
+      var href = 'mailto:' + to +
+        '?subject=' + encodeURIComponent(subject) +
+        '&body=' + encodeURIComponent(body);
+
+      window.location.href = href;
+
+      status.hidden = false;
+      status.textContent = 'Abrimos seu aplicativo de e-mail com a mensagem pronta. Confirme o envio para ' + to + '.';
     });
   });
 })();
